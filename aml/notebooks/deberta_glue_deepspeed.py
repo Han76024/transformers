@@ -41,7 +41,7 @@ ds = Datastore.register_azure_blob_container(workspace=ws,
                                              datastore_name='t1',
                                              container_name='azureml-blobstore-d6fc2475-ad02-44a7-90ff-88a2a91e66b1',
                                              account_name='substrateintel3704284680',
-                                             account_key='aHN5vf4m/Hd4ogssPRArAIgBb88IV6eMBSe1HwWYgth9kBcwvVBxtAcPM8XLOhZSq2CBrrvX5gQUMrySKCxpuA==',
+                                             account_key='',
                                              create_if_not_exists=True
                                              )
 
@@ -55,7 +55,7 @@ pytorch_env.docker.base_image = "hf/transformer/deberta:v0.0.1"
 pytorch_env.python.user_managed_dependencies = True
 pytorch_env.docker.base_image_registry.address = 'hanyu.azurecr.io'
 pytorch_env.docker.base_image_registry.username = 'hanyu'
-pytorch_env.docker.base_image_registry.password = 'mhewjKhbjwYAmjtt1IugCYwm3qSKwhA/'
+pytorch_env.docker.base_image_registry.password = ''
 # https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.core.environment.pythonsection?view=azure-ml-py
 pytorch_env.python.interpreter_path = '/opt/miniconda/bin/python'
 
